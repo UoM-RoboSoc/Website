@@ -14,6 +14,8 @@ const config = {
   tagline: 'Get involved in robotics',
   favicon: 'img/favicon.png',
 
+  staticDirectories: ['static'],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4

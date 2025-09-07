@@ -2,12 +2,13 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const CommitteeList = [
   {
     name: "Alessandro",
     role: "Chair",
-    img: "/img/Alessandro.jpg"
+    img: "/Website/img/Alessandro.jpg"
   },
   {
     name: "Alayna",
@@ -112,7 +113,7 @@ function CommitteeCard({name, role, img}) {
       <div class="avatar">
         <img
           className={clsx("avatar__photo avatar__photo--xl", styles.avatar__photo)}
-          src={img} />
+          src={useBaseUrl(img)} />
         <div class="avatar__intro">
           <div class="avatar__name">{name}</div>
           <small class="avatar__subtitle">{role}</small>

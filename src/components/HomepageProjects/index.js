@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const ProjectList = [
   {
@@ -114,7 +115,7 @@ function RegisterButton() {
 
 function Project({projectLead, img, title, difficulty, description, contact}) {
   return (
-    <header style={{ '--bg': `url(${img})`}} className={clsx('hero', styles.projectContainer)}>
+    <header style={{ '--bg': `url(${useBaseUrl(img)})`}} className={clsx('hero', styles.projectContainer)}>
       <div className="container">
         <div className="row">
           <div className="col col--4">

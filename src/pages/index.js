@@ -7,6 +7,7 @@ import HomepageProjects from '@site/src/components/HomepageProjects';
 import HomepageCommittee from '@site/src/components/HomepageCommittee';
 import Logo from '@site/static/img/logo.svg';
 import FormsIcon from '@material-symbols/svg-400/outlined/list.svg';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -84,7 +85,7 @@ function LocationSection() {
             <p>Sessions typically run every Wednesday 2-5pm and make use of the Dry Lab and the Makerspace.</p>
           </div>
           <div className="col col--6">
-            <img src="/img/nancy-rothwell.jpg" />
+            <img src={useBaseUrl("/img/nancy-rothwell.jpg")} />
             <p className="text--secondary-dark">Credit: fify.club</p>
           </div>
         </div>
@@ -138,7 +139,7 @@ function HackathonSection() {
             <p>Hack-a-bot first took place in 2022, with the most recent being one of the biggest 24 hour hackathons in the UK! <Link to="https://developer.sony.com/posts/hack-a-bot-2025-imx500-powers-24-hour-student-hackathon">See Sony's post about the 2025 event.</Link></p>
           </div>
           <div className="col col--6">
-            <img src="/img/hackathon.jpg" />
+            <img src={useBaseUrl("/img/hackathon.jpg")} />
             <p className="text--secondary-dark">Credit: Sony</p>
           </div>
         </div>
