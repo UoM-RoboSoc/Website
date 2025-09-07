@@ -1,0 +1,190 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+/**
+* Other
+*/
+
+.avatar__intro {
+  text-align: left;
+}
+
+.row {
+  align-items: center;
+}
+
+span {
+  line-height: 1.3em;
+}
+
+#register {
+  text-align: center;
+}
+
+.text--secondary-dark {
+  color: var(--ifm-color-content-dark);
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  height: 1.3em;
+  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-text-inline {
+  display: flex;
+  align-items: center;
+}
+
+.symbol-inline {
+  height: 2em;
+  width: auto;
+  padding-right: 0.5em;
+}
+
+/**
+* Fonts
+*/
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('@site/static/fonts/Supreme-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bespoke Stencil';
+  src: url('/fonts/BespokeStencil-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: 'Bespoke Stencil';
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Supreme';
+}
+
+body {
+  font-family: 'Supreme';
+}
+
+
+/**
+* Colors
+*/
+
+.footer--dark {
+  --ifm-footer-background-color: #101510;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-navbar-background-color: #101510;
+  --ifm-background-color: #101510;
+  --ifm-color-content: #E0E4DB;
+  --ifm-hero-background-color: #101510;
+
+  /*
+  --ifm-color-primary: #25C2A0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  */
+
+  --ifm-color-content: #e0e4db;
+  --ifm-color-content-dark: #cad1c1;
+  --ifm-color-content-darker: #bfc7b5;
+  --ifm-color-content-darkest: #9eab8e;
+  --ifm-color-content-light: #f6f7f5;
+  --ifm-color-content-lighter: #ffffff;
+  --ifm-color-content-lightest: #ffffff;
+
+  --ifm-color-primary: #b9f0b8;
+  --ifm-color-primary-dark: #96e995;
+  --ifm-color-primary-darker: #85e583;
+  --ifm-color-primary-darkest: #51da4f;
+  --ifm-color-primary-light: #dcf7db;
+  --ifm-color-primary-lighter: #edfbed;
+  --ifm-color-primary-lightest: #ffffff;
+
+  --material-background: #101510;
+  --material-error: #ffb4ab;
+  --material-error_container: #93000a;
+  --material-inverse_on_surface: #2d322c;
+  --material-inverse_primary: #37693c;
+  --material-inverse_surface: #e0e4db;
+  --material-on_background: #e0e4db;
+  --material-on_error: #690005;
+  --material-on_error_container: #ffdad6;
+  --material-on_primary: #033912;
+  --material-on_primary_container: #b9f0b8;
+  --material-on_primary_fixed: #002107;
+  --material-on_primary_fixed_variant: #1f5027;
+  --material-on_secondary: #243424;
+  --material-on_secondary_container: #d4e8d0;
+  --material-on_secondary_fixed: #0f1f10;
+  --material-on_secondary_fixed_variant: #3a4b39;
+  --material-on_surface: #e0e4db;
+  --material-on_surface_variant: #c2c9bd;
+  --material-on_tertiary: #00363c;
+  --material-on_tertiary_container: #bcebf2;
+  --material-on_tertiary_fixed: #001f24;
+  --material-on_tertiary_fixed_variant: #1f4d54;
+  --material-outline: #8c9389;
+  --material-outline_variant: #424940;
+  --material-primary: #9dd49d;
+  --material-primary_container: #1f5027;
+  --material-primary_fixed: #b9f0b8;
+  --material-primary_fixed_dim: #9dd49d;
+  --material-scrim: #000000;
+  --material-secondary: #b8ccb5;
+  --material-secondary_container: #3a4b39;
+  --material-secondary_fixed: #d4e8d0;
+  --material-secondary_fixed_dim: #b8ccb5;
+  --material-shadow: #000000;
+  --material-source_color: #b9f0b8;
+  --material-surface: #101510;
+  --material-surface_bright: #363a35;
+  --material-surface_container: #1c211c;
+  --material-surface_container_high: #272b26;
+  --material-surface_container_highest: #313630;
+  --material-surface_container_low: #181d18;
+  --material-surface_container_lowest: #0b0f0b;
+  --material-surface_dim: #101510;
+  --material-surface_tint: #9dd49d;
+  --material-surface_variant: #424940;
+  --material-tertiary: #a1ced6;
+  --material-tertiary_container: #1f4d54;
+  --material-tertiary_fixed: #bcebf2;
+  --material-tertiary_fixed_dim: #a1ced6;
+
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

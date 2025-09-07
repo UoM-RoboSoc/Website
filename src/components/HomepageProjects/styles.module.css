@@ -1,0 +1,30 @@
+.projectTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.projectContainer {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), var(--bg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: auto, 100%;
+  transition: background-size 0.5s; /* smooth zoom */
+}
+
+.title {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), var(--bg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: auto, 100%;
+}
+
+.projectContainer:hover {
+  background-size: auto, 120%;
+  cursor: pointer;
+}
+
+.difficulty {
+  color: var(--ifm-color-content-dark);
+}
