@@ -42,8 +42,13 @@
 
 .projectsSectionTitle {
   line-height: 0.8;
-  font-size: 2em;
+  font-size: 1em;
   padding-bottom: 0.2em;
+}
+@media (min-width: 1024px) {
+  .projectsSectionTitle {
+    font-size: 1.5em;
+  }
 }
 
 .divider {
