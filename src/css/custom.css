@@ -21,9 +21,9 @@
 */
 
 @media (max-width: 1024px) {
-.hero-contents {
-  padding: 0 10vh;
-}
+  .hero-contents {
+    padding: 0 5vw;
+  }
 }
 
 .icon {
