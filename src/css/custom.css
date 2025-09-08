@@ -20,12 +20,6 @@
 * Other
 */
 
-@media (max-width: 1024px) {
-  .hero-contents {
-    padding: 0 5vw;
-  }
-}
-
 .icon {
   width: 2.5em;
   height: auto;
@@ -57,10 +51,6 @@
 
 span {
   line-height: 1.3em;
-}
-
-#register {
-  text-align: center;
 }
 
 .text--secondary-dark {
