@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HomepageProjects from '@site/src/components/HomepageProjects';
-import HomepageCommittee from '@site/src/components/HomepageCommittee';
+import Features from '@site/src/components/Features';
+import Projects from '@site/src/components/Projects';
+import Committee from '@site/src/components/Committee';
 import Logo from '@site/static/img/logo.svg';
 import FormsIcon from '@material-symbols/svg-400/outlined/list.svg';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -12,39 +12,64 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function HomepageHeader() {
+function Hero() {
+  console.clear();
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          Get involved<br/>in <b>robotics</b>
-        </Heading>
-        <div class="row">
-          <div class="col col--3">
+        <div className="row">
+          <div className="col col--4 center-contents">
+            <img
+              className={styles.heroLogo}
+              src={useBaseUrl('/img/robosoc_logo.png')}
+            />
+
           </div>
-          <div class="col col--6">
-            <Heading as="p" className="hero__subtitle">
+
+          <div className="col hero-contents">
+            <Heading
+              as="h1"
+              className="hero__title"
+            >
+              Get involved in robotics
+            </Heading>
+
+            <Heading
+              as="p"
+              className="hero__subtitle"
+            >
               Based at the University of Manchester, our student-led robotics society encourages those of all levels to develop their skills.
             </Heading>
+
+            <div className={styles.heroButton}>
+              <Link
+                className="button button--primary button--lg"
+                to="#projects"
+              >
+                See our projects
+              </Link>
+
+              <Link
+                className="button button--secondary button--lg button--outline"
+                to="#register"
+              >
+                Register for a project
+              </Link>
+
+            </div>
+
           </div>
-          <div class="col col--3">
-          </div>
+
         </div>
-        <div className={styles.heroButton}>
-          <Link
-            className="button button--primary button--lg"
-            to="#projects">
-            See our projects
-          </Link>
-        </div>
+
       </div>
+
     </header>
   );
 }
 
-function ProjectSection() {
+function ProjectsSection() {
   return (
     <header className={clsx('hero', styles.projectsSection)} id="projects">
       <div className="container" >
@@ -52,7 +77,7 @@ function ProjectSection() {
         <Heading as="h1" className="hero__title" >
           <p className={styles.projectsSectionTitle}><b>Projects</b></p>
         </Heading>
-        <HomepageProjects />
+        <Projects />
       </div>
     </header>
   );
@@ -120,7 +145,7 @@ function CommitteeSection() {
 
         <p>Founded in 2013, and is currently run by the following people</p>
 
-        <HomepageCommittee/>
+        <Committee/>
 
       </div>
     </header>
@@ -150,7 +175,14 @@ function HackathonSection() {
 
 function Divider() {
   return (
-    <div className={styles.divider}>
+    <div className={styles.divider}></div>
+  );
+}
+
+function FeaturesSection() {
+  return (
+    <div className={styles.featuresSection} id="features">
+      <Features />
     </div>
   );
 }
@@ -161,10 +193,10 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description={`${siteConfig.tagline}`}>
-      <HomepageHeader />
+      <Hero />
       <main>
-        <HomepageFeatures />
-        <ProjectSection />
+        <FeaturesSection />
+        <ProjectsSection />
         <HackathonSection />
         <CommitteeSection />
         <LocationSection />

@@ -20,6 +20,17 @@
 * Other
 */
 
+@media (max-width: 1024px) {
+.hero-contents {
+  padding: 0 10vh;
+}
+}
+
+.center-contents {
+  display: flex;
+  justify-content: center;
+}
+
 .avatar__intro {
   text-align: left;
 }
