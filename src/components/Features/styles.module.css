@@ -1,0 +1,11 @@
+.featureTitle {
+  display: flex;
+  align-items: center;
+}
+
+.featureIcon {
+  height: 32px;
+  width: auto;
+  padding-right: 0.5em;
+  fill: var(--material-on_surface);
+}

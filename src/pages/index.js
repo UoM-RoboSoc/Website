@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Features from '@site/src/components/Features';
 import Projects from '@site/src/components/Projects';
 import Committee from '@site/src/components/Committee';
+import Socials from '@site/src/components/Socials';
 import Logo from '@site/static/img/logo.svg';
 import FormsIcon from '@material-symbols/svg-400/outlined/list.svg';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,7 +20,7 @@ function Hero() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <div className="row">
-          <div className="col col--4 center-contents">
+          <div className="col col--4 flex-1 center-contents">
             <img
               className={styles.heroLogo}
               src={useBaseUrl('/img/robosoc_logo.png')}
@@ -42,13 +43,14 @@ function Hero() {
               Based at the University of Manchester, our student-led robotics society encourages those of all levels to develop their skills.
             </Heading>
 
-            <div className={styles.heroButton}>
+            <div className={clsx("flex-1 flex-wrap")}>
               <Link
                 className="button button--primary button--lg"
                 to="#projects"
               >
                 See our projects
               </Link>
+
 
               <Link
                 className="button button--secondary button--lg button--outline"
@@ -187,6 +189,14 @@ function FeaturesSection() {
   );
 }
 
+function SocialsSection() {
+  return (
+    <div className={`flex-1 center-contents`}>
+      <Socials />
+    </div>
+  );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -202,6 +212,7 @@ export default function Home() {
         <LocationSection />
         <RegisterSection />
         <Divider />
+        <SocialsSection />
       </main>
     </Layout>
   );

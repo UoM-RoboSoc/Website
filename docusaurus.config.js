@@ -99,35 +99,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Socials',
-            items: [
-              {
-                label: 'Instagram',
-                to: 'https://www.instagram.com/uom_robosoc/',
-              },
-              {
-                label: 'Discord',
-                to: 'https://discord.gg/JwrXZmu5fP',
-              },
-              {
-                label: 'Youtube',
-                to: 'https://www.youtube.com/channel/UCfwnHCMXjAZ_oWmqDuxO6Bg',
-              },
-              {
-                label: 'Facebook',
-                to: 'https://www.facebook.com/RoboSoc.uom/',
-              },
-              {
-                label: 'Linktree',
-                to: 'https://linktr.ee/uom_robosoc',
-              },
-              {
-                label: 'Manchester Student Union Page',
-                to: 'https://manchesterstudentsunion.com/activities/view/robotics',
-              },
-            ],
-          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Robosoc. Built by Zoe.`,
       },

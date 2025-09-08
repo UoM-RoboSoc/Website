@@ -26,8 +26,24 @@
 }
 }
 
-.center-contents {
+.icon {
+  width: 2.5em;
+  height: auto;
+}
+.icon:hover {
+  opacity: 60%;
+}
+
+.flex-1 {
   display: flex;
+  gap: 1em;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.center-contents {
   justify-content: center;
 }
 
