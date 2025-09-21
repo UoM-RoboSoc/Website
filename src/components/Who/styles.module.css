@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3em;
+  @media screen and (max-width: 996px) {
+    flex-direction: column;
+    gap: 0em;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 64px;
+  margin: 0;
+  @media screen and (max-width: 996px) {
+    font-size: 48px;
+  }
+}
+
+.content {
+}
+
+.desc {
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.titleIcon {
+  height: 0.85em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.icon {
+  height: 1em;
+  margin-right: 0.5em;
+}

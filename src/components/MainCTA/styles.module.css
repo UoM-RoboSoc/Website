@@ -1,0 +1,59 @@
+.section {
+  text-align: center;
+}
+
+.titleIcon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.icon {
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* arrow pointing down */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--ifm-background-surface-color) transparent transparent transparent;
+  }
+}
+
+.tooltipContainer:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.link {
+  cursor: pointer;
+}

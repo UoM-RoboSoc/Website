@@ -1,0 +1,8 @@
+.title {
+  background: linear-gradient(to right, #5EFE7F, #6EFFF5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* make text transparent to show bg */
+  background-clip: text; /* standard property (for Firefox) */
+  color: transparent;
+  margin: 0;
+}

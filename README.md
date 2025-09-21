@@ -1,9 +1,3 @@
-# TO-DO
-
-- [ ] Replace project backgrounds
-- [ ] Link register button to google forms
-- [ ] Add hackabot website
-
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.

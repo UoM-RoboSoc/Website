@@ -1,13 +1,18 @@
-.avatar__photo {
-  object-fit: cover;
-  padding: 1em;
+.title {
+  margin-bottom: 1.5em;
 }
 
-.row {
-  align-items: flex-start;
-  justify-content: center;
+.card {
+  padding: 1rem;
 }
 
-.col {
-  justify-content: center;
+.committeeGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 4em 2em;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(var(--ifm-container-width) / 6), 1fr)
+    );
+    width: 100%;
 }

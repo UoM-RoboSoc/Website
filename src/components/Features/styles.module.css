@@ -1,11 +1,33 @@
-.featureTitle {
+.container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media screen and (max-width: 996px) {
+    padding: 0 0rem;
+    flex-direction: column;
+  }
 }
 
-.featureIcon {
+.title{
+  text-align: center;
+}
+
+.feature {
+  padding: 1rem 0rem;
+  text-align: center;
+  @media screen and (min-width: 996px) {
+    max-width: 280px;
+  }
+}
+
+.icon {
   height: 32px;
   width: auto;
-  padding-right: 0.5em;
-  fill: var(--material-on_surface);
+  color: var(--ifm-color-content);
+  margin: 1rem 0;
+}
+
+.desc {
+  color: var(--ifm-color-content-darker);
 }

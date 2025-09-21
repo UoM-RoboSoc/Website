@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.icon {
+    width: 1.5em;
+}

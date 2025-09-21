@@ -1,0 +1,9 @@
+.icon {
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+}

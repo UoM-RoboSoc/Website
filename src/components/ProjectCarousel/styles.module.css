@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    height: inherit;
+}
+
+.imageContainer {
+    height: 200px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    text-align: center;
+    scroll-margin-top: 6em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}

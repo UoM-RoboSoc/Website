@@ -1,0 +1,50 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.banner {
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/hero-images/arm-project.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 4rem 0;
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.roboTitle {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: var(--ifm-color-secondary-dark);
+}
+
+.buttons {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}

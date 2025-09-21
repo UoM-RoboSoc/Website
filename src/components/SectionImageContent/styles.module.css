@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  gap: 3em;
+  @media screen and (max-width: 996px) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 64px;
+  @media screen and (max-width: 996px) {
+    font-size: 48px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: var(--ifm-card-border-radius);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}

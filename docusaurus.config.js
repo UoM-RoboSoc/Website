@@ -11,10 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ROBOSOC',
-  tagline: 'Get involved in robotics',
-  favicon: 'img/favicon.png',
-
-  staticDirectories: ['static'],
+  tagline: 'UoM Robotics Society',
+  favicon: 'assets/roboLogo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://uom-robosoc.github.io',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Website/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'UoM-RoboSoc', // Usually your GitHub org/user name.
-  projectName: 'Website', // Usually your repo name.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,14 +47,17 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: false,
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          routeBasePath: 'events',
+          path: './events',
+          blogTitle: 'Events',
+          showReadingTime: false,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -64,10 +65,10 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
+          onInlineAuthors: 'ignore',
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
@@ -78,35 +79,50 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  ({
+    metadata: [
+      {name: 'keywords', content: 'robotics'}
+    ],
+
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+
+    // Replace with your project's social card
+    // image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: '',
+      logo: {
+        alt: 'ROBOSOC Logo',
+        src: 'assets/roboLogo.svg',
       },
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: '',
-        logo: {
-          alt: 'Robosoc',
-          src: 'img/logo.svg',
-        },
-        items: [
-        ],
+      items: [
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'right',
+        //   label: 'Wiki',
+        // },
+        // {to: '/events', label: 'Events', position: 'right'},
+        {to: '#Projects', label: 'Projects', position: 'right'},
+        {to: '#Location', label: 'Location', position: 'right'},
+      ],
+    },
+    footer: {
+      style: 'dark',
+      logo: {
+        src: 'assets/roboTitle.svg'
       },
-      footer: {
-        style: 'dark',
-        links: [
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Robosoc. Built by Zoe.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+      copyright: `© ${new Date().getFullYear()} ROBOSOC. Built by Zoe.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
 };
 
 export default config;
