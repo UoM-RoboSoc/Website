@@ -182,6 +182,15 @@ export const projects = [
     contact: 'artemis@uom-robosoc.com',
   },
   {
+    id: 'arm',
+    title: 'The Arm Project',
+    difficulty: 'Advanced',
+    projectLead: 'Joshua A',
+    img: '/img/hero-images/arm-project.jpg',
+    shortDescription: "Make a robotic arm play poker!",
+    contact: 'arm@uom-robosoc.com',
+  },
+  {
     id: 'bespoke',
     title: 'Bespoke Projects',
     difficulty: 'Advanced',
