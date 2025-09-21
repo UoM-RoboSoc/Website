@@ -15,10 +15,15 @@
 }
 
 .title {
-  font-size: 64px;
+  font-size: 4rem;
   margin: 0;
   @media screen and (max-width: 996px) {
-    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 498px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 

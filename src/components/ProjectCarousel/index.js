@@ -68,7 +68,7 @@ export default function ProjectCarousel() {
     cssEase: "ease",
     arrows: true,
     centerMode: true,
-    centerPadding: "20px",
+    centerPadding: "0px",
     dots: true,
     draggable: true,
     focusOnSelect: true,
@@ -76,16 +76,20 @@ export default function ProjectCarousel() {
     speed: 500,
     swipeToSlide: true,
     swipe: true,
-    slidesToShow: Math.min(filteredProjects.length, 3),
+    slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
+        breakpoint: 3000,
+        settings: { slidesToShow: Math.min(filteredProjects.length, 3) }
       },
       {
-        breakpoint: 600,
-        settings: { slidesToShow: 1 },
+        breakpoint: 1024,
+        settings: { slidesToShow: Math.min(filteredProjects.length, 2) },
+      },
+      {
+        breakpoint: 700,
+        settings: { slidesToShow: 1 }
       },
     ],
   };
@@ -99,7 +103,7 @@ export default function ProjectCarousel() {
 
       <p><br/></p>
 
-      <ul className="tabs">
+      <ul className={`tabs ${styles.tabs}`}>
         {allDifficulties.map(difficulty => (
           <li
             key={difficulty}

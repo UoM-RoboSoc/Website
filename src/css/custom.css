@@ -16,6 +16,9 @@
 
 /* You can override the default Infima variables here. */
 
+@media screen and (max-width: 996px) {
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #b9f0b8;
   --ifm-color-primary-dark: #96e995;
