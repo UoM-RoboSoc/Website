@@ -34,15 +34,16 @@ function CopyEmailButton(props) {
 export default function MainCTA(props) {
   return (
     <Section>
-      <div className={styles.section}><p>Interested?</p>
-      <h1>{props.title || `Become a member of the society!`}</h1>
-      <RegisterButton
-        className="button button--primary button--lg"/>
-      </div>
+      <div className={styles.section}>
+        <p>Interested?</p>
+        <h1>{props.title || `Become a member of the society!`}</h1>
+        <RegisterButton
+          className="button button--primary button--lg"/>
       <p><br/></p>
       <CopyEmailButton>
         {props.contact || "uom-robosoc@gmail.com"}
       </CopyEmailButton>
+      </div>
     </Section>
   );
 }
