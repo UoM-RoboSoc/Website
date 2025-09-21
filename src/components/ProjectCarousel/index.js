@@ -85,11 +85,18 @@ export default function ProjectCarousel() {
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: Math.min(filteredProjects.length, 2) },
+        settings: { 
+          slidesToShow: Math.min(filteredProjects.length, 2),
+          centerPadding: "20px",
+        },
       },
       {
         breakpoint: 700,
-        settings: { slidesToShow: 1 }
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "20px",
+          arrows: false,
+        }
       },
     ],
   };
