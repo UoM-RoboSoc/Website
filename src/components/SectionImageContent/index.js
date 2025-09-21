@@ -30,9 +30,9 @@ function Image(props) {
   )
 }
 
-function HeroSection(props) {
+export default function SectionImageContent(props) {
   return (
-    <Section>
+    <Section id={props.id}>
     <div className={clsx("container", styles.container)}>
       {props.imagePos === "right" ? <Content {...props}/> : <Image {...props}/>}
       {props.imagePos === "right" ? <Image {...props}/> : <Content {...props}/>}
@@ -40,5 +40,3 @@ function HeroSection(props) {
     </Section>
   );
 }
-
-export default HeroSection;

@@ -13,7 +13,7 @@ import styles from './styles.module.css';
 function Section(props) {
   const { children } = props;
   return (
-    <div className={styles.wrapper} id={props.id}>
+    <div className={styles.wrapper} {...props}>
       <div className={clsx("container", styles.container)}>{children}</div>
     </div>
   );
