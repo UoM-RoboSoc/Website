@@ -161,7 +161,7 @@ export const projects = [
     projectLead: 'Tara',
     img: '/img/cubo/white-cubo_blue-bg.png',
     shortDescription: "Build autonomous robots capable of solving a Rubik's cube in 60 seconds!",
-    contact: 'cubo@uom-robosoc.com',
+    // contact: 'cubo@uom-robosoc.com',
   },
   {
     id: 'spyders',
