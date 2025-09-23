@@ -8,7 +8,7 @@ export default function Hello() {
     <Layout>
       <div className={`${styles.container}`}>
         <iframe
-          src="https://forms.gle/bFQgeNVwAF9L2EKv8"
+          src="https://forms.gle/avJVw4PRgBHEByqk6"
           width="100%"
           height="100%"
           className={styles.iframe}
