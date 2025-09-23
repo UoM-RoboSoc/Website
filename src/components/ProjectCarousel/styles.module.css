@@ -20,6 +20,7 @@
 .title {
     text-align: center;
     scroll-margin-top: 6em;
+    max-width: 900px;
 }
 
 .button {
