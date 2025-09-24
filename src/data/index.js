@@ -5,103 +5,140 @@ import { FaRegFaceSmileBeam } from 'react-icons/fa6';
 export const committee = [
   {
     name: "Alessandro",
+    fullName: "Alessandro Sica",
     role: "Chair",
-    img: "/img/committee-members/Alessandro.png"
+    img: "/img/committee-members/alessandro.jpg",
+    linkedin: "https://www.linkedin.com/in/-alessandro-sica"
   },
   {
     name: "Alayna",
+    fullName: "Alayna Kondamudi",
     role: "General Secretary",
-    img: "/img/committee-members/Alayna.png"
+    img: "/img/committee-members/alayna.jpg",
+    linkedin: "https://www.linkedin.com/in/alayna-kondamudi-438841301"
   },
   {
     name: "Nadeem",
+    fullName: "Nadeem Ahmad",
     role: "Treasurer",
-    img: "/img/committee-members/Nadeem.png"
+    // img: "/img/committee-members/nadeem.jpg",
+    linkedin: "https://www.linkedin.com/in/nadeem-ahmad-934864332",
   },
   {
     name: "Seun",
+    fullName: "Seun Fashesin Souza",
     role: "Inclusions/Events",
-    img: "/img/committee-members/Seun.png"
+    img: "/img/committee-members/seun.jpg",
+    linkedin: "https://www.linkedin.com/in/seun-fashesin-souza-6285a8236",
   },
   {
     name: "Joshua B",
+    fullName: "Joshua Bode",
     role: "Technician",
-    img: "/img/committee-members/Joshua B.png"
+    img: "/img/committee-members/joshua_b.jpg",
+    linkedin: "https://www.linkedin.com/in/joshuabode",
   },
   {
     name: "Justin",
+    fullName: "Jongjun Justin Lee",
     role: "Project Lead",
-    img: "/img/committee-members/Justin.png"
+    img: "/img/committee-members/justin.jpg",
+    linkedin: "https://www.linkedin.com/in/jonghun-justin-lee"
   },
   {
     name: "Arjan",
+    fullName: "Arjan Khele",
     role: "Project Lead",
-    img: "/img/committee-members/Arjan.png"
+    img: "/img/committee-members/arjan.jpg",
+    linkedin: "https://www.linkedin.com/in/arjan-khele-9712081b9"
   },
   {
     name: "Joshua A",
+    fullName: "Joshua Alliet",
     role: "Project Lead",
-    img: "/img/committee-members/Joshua A.png"
+    img: "/img/committee-members/joshua_a.jpg",
+    linkedin: "https://www.linkedin.com/in/jalliet"
   },
   {
     name: "Levon",
+    fullName: "Levon Yavrumyan",
     role: "Project Lead",
-    img: "/img/committee-members/Levon.png"
+    img: "/img/committee-members/levon.jpg",
+    linkedin: "https://www.linkedin.com/in/levon-yavrumyan"
   },
   {
     name: "Dinakar",
+    fullName: "Dinakar Iyer",
     role: "Project Lead",
-    img: "/img/committee-members/Dinakar.png"
+    img: "/img/committee-members/dinakar.jpg",
+    linkedin: "https://www.linkedin.com/in/dinakar-i-39a61a293"
   },
   {
     name: "Tara",
+    fullName: "Tara Mulhall",
     role: "Project Lead",
-    img: "/img/committee-members/Tara.png"
+    img: "/img/committee-members/tara.jpg",
+    linkedin: "https://www.linkedin.com/in/tara-mulhall-67002a19a"
   },
   {
     name: "Xandra",
+    fullName: "Xandra Wong",
     role: "Project Support",
-    img: "/img/committee-members/Xandra.png"
+    img: "/img/committee-members/xandra.jpg",
+    linkedin: "https://www.linkedin.com/in/xin-rou-wong-693810372"
   },
   {
     name: "Camila",
+    fullName: "Camila Salazar",
     role: "Project Support",
-    img: "/img/committee-members/Camila.png"
+    img: "/img/committee-members/camila.jpg",
+    linkedin: "https://www.linkedin.com/in/camila-salazar-b86227350"
   },
   {
-    name: "Joshua F",
+    name: "Josh F",
+    fullName: "Josh Fleet",
     role: "Project Support",
-    img: "/img/committee-members/Joshua F.png"
+    // img: "/img/committee-members/josh_f.jpg",
+    linkedin: "https://www.linkedin.com/in/josh-fleet-b24575315"
   },
   {
     name: "Rabia",
+    fullName: "Rabia Chowdhury",
     role: "Media Manager",
-    img: "/img/committee-members/Rabia.png"
+    // img: "/img/committee-members/rabia.jpg"
   },
   {
     name: "Zoe",
+    fullName: "Zoe Tang",
     role: "Media Manager",
-    img: "/img/committee-members/Zoe.png"
+    img: "/img/committee-members/zoe.jpg",
+    linkedin: "https://www.linkedin.com/in/zoe-t-b9106a316/"
   },
   {
     name: "Billy",
+    fullName: "Billy Caulfield",
     role: "Events Team",
-    img: "/img/committee-members/Billy.png"
+    img: "/img/committee-members/billy.jpg",
+    linkedin: "https://www.linkedin.com/in/billy-caulfield/"
   },
   {
     name: "Archie",
+    fullName: "Archie James",
     role: "Hackathon Team",
-    img: "/img/committee-members/Archie.png"
+    // img: "/img/committee-members/archie.jpg",
   },
   {
     name: "Ted",
+    fullName: "Edward Donnan",
     role: "Hackathon Team",
-    img: "/img/committee-members/Ted.png"
+    // img: "/img/committee-members/ted.jpg"
   },
   {
     name: "Thierry",
+    fullName: "Thierry Popat",
     role: "Hackathon Team",
-    img: "/img/committee-members/Thierry.png"
+    img: "/img/committee-members/thierry.jpg",
+    linkedin: "https://www.linkedin.com/in/thierry-popat/"
   },
 ];
 
@@ -132,87 +169,5 @@ export const homeFeatures = [
         We want to be a place where members can make friends and connections that will stay with them of the rest of their lives.
       </>
     ),
-  },
-];
-
-export const projects = [
-  {
-    id: 'buggy',
-    title: 'The Buggy Project',
-    difficulty: 'Beginner',
-    projectLead: 'Justin',
-    projectLeadTitle: 'Buggy Lead',
-    img: '/img/buggy/buggy.jpeg',
-    shortDescription: 'Build an autonomous buggy capable of navigating a maze!',
-    contact: 'buggy@uom-robosoc.com',
-  },
-  {
-    id: 'rfl',
-    title: 'R.F.L',
-    difficulty: 'Beginner',
-    projectLead: 'Arjan',
-    projectLeadTitle: 'RFL Lead',
-    img: '/img/rfl/rfl.jpeg',
-    shortDescription: 'Make fighting robots to compete in national competitions!',
-    contact: 'rfl@uom-robosoc.com',
-  },
-  {
-    id: 'cubo',
-    title: 'C.U.B.O',
-    difficulty: 'Intermediate',
-    projectLead: 'Tara',
-    projectLeadTitle: 'CUBO Lead',
-    img: '/img/cubo/white-cubo_blue-bg.png',
-    shortDescription: "Build autonomous robots capable of solving a Rubik's cube in 60 seconds!",
-    // contact: 'cubo@uom-robosoc.com',
-  },
-  {
-    id: 'spyders',
-    title: 'Spyders',
-    difficulty: 'Intermediate',
-    projectLead: 'Dinakar',
-    projectLeadTitle: 'Spyders Lead',
-    img: '/img/spyders/spyders-thumb.jpeg',
-    shortDescription: "Develop remote controlled multi-legged robots!",
-    contact: 'spyders@uom-robosoc.com',
-  },
-  {
-    id: 'artemis-iii',
-    title: 'Artemis III',
-    difficulty: 'Advanced',
-    projectLead: 'Levon',
-    projectLeadTitle: 'Artemis Lead',
-    img: '/img/artemis-iii/artemis-iii.jpeg',
-    shortDescription: "Develop a drone controlled by your hand movements!",
-    contact: 'artemis@uom-robosoc.com',
-  },
-  {
-    id: 'arm',
-    title: 'The Arm Project',
-    difficulty: 'Advanced',
-    projectLead: 'Joshua A',
-    projectLeadTitle: 'Arm Lead',
-    img: '/img/arm/arm-thumb.jpeg',
-    shortDescription: "Make a robotic arm play poker!",
-    contact: 'arm@uom-robosoc.com',
-  },
-  {
-    id: 'rfl-bw',
-    title: 'RFL Beetle Weight',
-    difficulty: 'Advanced',
-    projectLead: 'Arjan',
-    projectLeadTitle: 'RFL Lead',
-    img: '/img/rfl/rfl.jpeg',
-    shortDescription: "Compete in the RFL Beetleweight competition!",
-  },
-  {
-    id: 'bespoke',
-    title: 'Bespoke Projects',
-    difficulty: 'Advanced',
-    projectLead: 'Joshua B',
-    projectLeadTitle: 'Bespoke Lead',
-    img: '/img/rov_board.png',
-    shortDescription: "Work on our unfinished robots or bring your own idea to the table!",
-    contact: 'bespoke@uom-robosoc.com',
   },
 ];

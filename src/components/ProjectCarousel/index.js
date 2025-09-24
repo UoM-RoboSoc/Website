@@ -3,8 +3,9 @@ import Section from '@site/src/components/Section';
 import Slider from "react-slick";
 import CommitteeCard from '@site/src/components/CommitteeCard';
 import RegisterButton from '@site/src/components/RegisterButton';
-import { projects } from '@site/src/data';
+import { projects } from '@site/src/data/projects';
 import Link from '@docusaurus/Link';
+import { committee } from '@site/src/data';
 
 import styles from './styles.module.css';
 import "slick-carousel/slick/slick.css";
@@ -20,6 +21,11 @@ function CTA() {
 }
 
 function ProjectCard(props) {
+
+  const img = committee.find(obj => {
+    return obj.name === props.projectLead
+  }).img
+
   return (
     <>
       <div className={`card ${styles.card}`}>
@@ -40,7 +46,8 @@ function ProjectCard(props) {
         <div className="card__footer">
           <CommitteeCard
             name={props.projectLead}
-            role={`${props.title} lead`}/>
+            role={`${props.projectLeadTitle}`}
+            img={img}/>
           <Link
             className={`button button--primary ${styles.button}`}
             to={`Projects/${props.id}`}>
@@ -101,15 +108,7 @@ export default function ProjectCarousel() {
     ],
   };
   return (
-    <Section>
-      <div className={styles.title} id="Projects">
-        <h1>See the <span className="text-primary">Projects</span> we offer</h1>
-      </div>
-
-      <RegisterButton className="button button--primary button--outline button--lg"/>
-
-      <p><br/></p>
-
+    <>
       <ul className={`tabs ${styles.tabs}`}>
         {allDifficulties.map(difficulty => (
           <li
@@ -131,6 +130,6 @@ export default function ProjectCarousel() {
           ))}
         </Slider>
       </div>
-    </Section>
+    </>
   );
 }
