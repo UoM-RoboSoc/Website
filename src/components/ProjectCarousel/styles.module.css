@@ -21,6 +21,14 @@
     height: 100%;
 }
 
+.swiperSlide {
+    height: auto;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+}
+
 .imageContainer {
     height: 200px;
     overflow: hidden;
