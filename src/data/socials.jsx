@@ -47,4 +47,10 @@ export const socials = [
     img: '/assets/gradcracker.svg',
     to: 'https://www.gradcracker.com/student-societies/4276/manchester-robotics-society',
   },
+  {
+    id: 'email',
+    label: 'Email',
+    img: '/assets/mail.svg',
+    to: 'mailto:uom-robosoc@gmail.com'
+  }
 ];
