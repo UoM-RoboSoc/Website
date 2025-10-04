@@ -21,15 +21,6 @@
     height: 100%;
 }
 
-.swiperSlide {
-/* the following breaks sometimes on a deployed site */
-    /* height: auto; */
-    /**/
-    /* /* Center slide text vertically */ */
-    /* display: flex; */
-    /* justify-content: center; */
-}
-
 .imageContainer {
     height: 200px;
     overflow: hidden;
