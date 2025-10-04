@@ -112,7 +112,6 @@ export default function ProjectCarousel() {
 
       <br/>
 
-      <div className="container">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           slidesPerView={1}
@@ -148,7 +147,6 @@ export default function ProjectCarousel() {
             <SwiperSlide className={styles.swiperSlide} data-hash={`slide${idx}`}><ProjectCard key={idx} {...props} /></SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </>
   );
 }
