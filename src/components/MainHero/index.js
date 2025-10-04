@@ -23,7 +23,7 @@ export default function Hero() {
           <Link to="/Register"
             className="button button--secondary button--outline button--lg">Register for a project</Link>
         </div>
-        <Link to="#Who">
+        <Link to="#About">
           <img src="/assets/down-arrows.gif" width="40" />
         </Link>
       </div>
