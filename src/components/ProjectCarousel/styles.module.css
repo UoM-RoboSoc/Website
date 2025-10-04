@@ -22,11 +22,12 @@
 }
 
 .swiperSlide {
-    height: auto;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
+/* the following breaks sometimes on a deployed site */
+    /* height: auto; */
+    /**/
+    /* /* Center slide text vertically */ */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .imageContainer {
