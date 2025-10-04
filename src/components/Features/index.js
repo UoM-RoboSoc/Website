@@ -9,7 +9,7 @@ function Feature({Icon, title, description}) {
         <Icon className={styles.icon}/>
         <h3 className={styles.featureTitle}>{title}</h3>
       </div>
-      <div className="card__body">
+      <div className={`card__body ${styles.desc}`}>
         <p>
           {description}
         </p>
@@ -20,9 +20,9 @@ function Feature({Icon, title, description}) {
 
 export default function Features() {
   return (
-    <Section>
+    <Section id="Features">
       <div className={styles.title}>
-        <h1>Unlock Your Robotics Journey</h1>
+        <h1>What we do</h1>
       </div>
       <div className={styles.container}>
         {homeFeatures.map((props, idx) => (

@@ -1,17 +1,25 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+* Any CSS included here will be global. The classic template
+* bundles Infima by default. Infima is a CSS framework designed to
+* work well for content-centric websites.
+*/
 :root {
-    --ifm-color-secondary-dark: rgb(212, 213, 216);
-    --ifm-color-secondary-darker: rgb(200, 201, 204);
-    --ifm-color-secondary-darkest: rgb(164, 166, 168);
-    --ifm-color-secondary-light: rgb(238, 240, 242);
-    --ifm-color-secondary-lighter: rgb(241, 242, 245);
-    --ifm-color-secondary-lightest: rgb(245, 246, 248);
-    --ifm-color-secondary-contrast-background: rgb(253, 253, 254);
-    --ifm-color-secondary-contrast-foreground: rgb(71, 71, 72);
+  --ifm-color-secondary-dark: rgb(212, 213, 216);
+  --ifm-color-secondary-darker: rgb(200, 201, 204);
+  --ifm-color-secondary-darkest: rgb(164, 166, 168);
+  --ifm-color-secondary-light: rgb(238, 240, 242);
+  --ifm-color-secondary-lighter: rgb(241, 242, 245);
+  --ifm-color-secondary-lightest: rgb(245, 246, 248);
+  --ifm-color-secondary-contrast-background: rgb(253, 253, 254);
+  --ifm-color-secondary-contrast-foreground: rgb(71, 71, 72);
+
+  --swiper-pagination-bullet-inactive-color: var(--ifm-color-secondary-dark);
+  --swiper-pagination-color: var(--ifm-color-primary);
+  /* --swiper-wrapper-transition-timing-function: linear; */
+  --swiper-navigation-size: 22px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--ifm-color-primary);
 }
 
 /* You can override the default Infima variables here. */
@@ -46,15 +54,34 @@ html {
   scroll-behavior: smooth;
 }
 
-/* React slick */
+/* React swiper js */
 
-.slick-dots li button::before {
-    color: var(--ifm-color-content) !important;
+.swiper-pagination {
+  margin-top: 10px;
+  position: relative !important;
 }
 
-.slick-slide {
-  padding: 0 10px;
+/* Badges */
+
+.badge {
+  --ifm-badge-background-color: var(--ifm-color-content);
+  --ifm-badge-color: var(--ifm-background-color);
 }
+
+/* .badge--beginner { */
+/*   --ifm-badge-background-color: #ACD0AA; */
+/*   --ifm-badge-color: #101510; */
+/* } */
+/**/
+/* .badge--intermediate { */
+/*   --ifm-badge-background-color: #91B490; */
+/*   --ifm-badge-color: #101510; */
+/* } */
+/**/
+/* .badge--advanced { */
+/*   --ifm-badge-background-color: #779976; */
+/*   --ifm-badge-color: #101510; */
+/* } */
 
 /**
 * Fonts

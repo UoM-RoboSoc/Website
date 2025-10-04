@@ -9,30 +9,6 @@
   }
 }
 
-.heading {
-  display: flex;
-  align-items: center;
-}
-
-.title {
-  font-size: 4rem;
-  margin: 0;
-  @media screen and (max-width: 996px) {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  @media screen and (max-width: 498px) {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.content {
-}
-
-.desc {
-}
-
 .button {
   display: flex;
   align-items: center;

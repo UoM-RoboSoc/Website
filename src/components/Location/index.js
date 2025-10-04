@@ -8,6 +8,7 @@ import { MdOpenInNew } from 'react-icons/md';
 export default function Location() {
   return (
     <SectionImageContent
+      className={styles.section}
       id="Location"
       title="Sessions every Wednesday"
       desc={

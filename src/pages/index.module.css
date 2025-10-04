@@ -1,1 +1,3 @@
-
+.layout > div:nth-child(odd) {
+    background-color: #1C211C;
+}

@@ -107,8 +107,10 @@ const config = {
         //   label: 'Wiki',
         // },
         // {to: '/events', label: 'Events', position: 'right'},
+        {to: '#About', label: 'About', position: 'right'},
+        {to: '#Features', label: 'What we do', position: 'right'},
         {to: '#Projects', label: 'Projects', position: 'right'},
-        {to: '#Location', label: 'Location', position: 'right'},
+        {to: '#Committee', label: 'Committee', position: 'right'},
       ],
     },
     footer: {

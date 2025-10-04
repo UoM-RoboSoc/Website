@@ -8,7 +8,7 @@ const hackathon = {
   title: "Await our yearly Hackathon!",
   desc: (
     <>
-      Hack-a-bot first took place in 2022, with the most recent being one of the biggest 24 hour hackathons in the UK! Students are able to join our hackathon at no cost to tackle different tasks in teams. <Link to="https://developer.sony.com/posts/hack-a-bot-2025-imx500-powers-24-hour-student-hackathon">See Sony's post about the 2025 event.</Link>
+      Hack-a-bot first took place in 2022, with the most recent being one of the biggest 24 hour hackathons in the UK! Students are able to join our hackathon at no cost to tackle different robotics-focused tasks in teams. <Link to="https://developer.sony.com/posts/hack-a-bot-2025-imx500-powers-24-hour-student-hackathon">See Sony's post about the 2025 event.</Link>
       <br/>
       <small>Image credit: Sony</small>
     </>

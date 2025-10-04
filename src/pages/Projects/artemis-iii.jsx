@@ -1,5 +1,5 @@
 import ProjectPage from '@site/src/components/ProjectPage';
-import { projects } from '@site/src/data';
+import { projects } from '@site/src/data/projects';
 import AboutPage from '@site/src/data/artemis-iii/about.mdx';
 
 export default function Artemisiii() {

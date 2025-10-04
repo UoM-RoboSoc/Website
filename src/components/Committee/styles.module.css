@@ -1,18 +1,7 @@
+.section {
+  background-color: #1C211C;
+}
+
 .title {
   margin-bottom: 1.5em;
-}
-
-.card {
-  padding: 1rem;
-}
-
-.committeeGrid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 2em;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(calc(var(--ifm-container-width) / 6), 1fr)
-    );
-    width: 100%;
 }

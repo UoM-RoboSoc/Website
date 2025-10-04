@@ -1,0 +1,15 @@
+.card {
+  padding: 1rem;
+  background-color: #272B26;
+}
+
+.committeeGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2em;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(var(--ifm-container-width) / 5), 1fr)
+    );
+    width: 100%;
+}

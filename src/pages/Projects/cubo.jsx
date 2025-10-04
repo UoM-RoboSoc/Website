@@ -1,5 +1,5 @@
 import ProjectPage from '@site/src/components/ProjectPage';
-import { projects } from '@site/src/data';
+import { projects } from '@site/src/data/projects';
 import AboutPage from '@site/src/data/cubo/about.mdx';
 
 export default function Cubo() {

@@ -1,5 +1,3 @@
-import clsx from 'clsx';
-import React from 'react';
 import Section from '../Section';
 
 import styles from './styles.module.css';
@@ -32,11 +30,11 @@ function Image(props) {
 
 export default function SectionImageContent(props) {
   return (
-    <Section id={props.id}>
-    <div className={clsx("container", styles.container)}>
-      {props.imagePos === "right" ? <Content {...props}/> : <Image {...props}/>}
-      {props.imagePos === "right" ? <Image {...props}/> : <Content {...props}/>}
-    </div>
+    <Section id={props.id} {...props}>
+      <div className={`container ${styles.container}`}>
+        {props.imagePos === "right" ? <Content {...props}/> : <Image {...props}/>}
+        {props.imagePos === "right" ? <Image {...props}/> : <Content {...props}/>}
+      </div>
     </Section>
   );
 }

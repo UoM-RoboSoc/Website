@@ -2,6 +2,7 @@ import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 import MainCTA from '@site/src/components/MainCTA';
+import { projects } from '@site/src/data/projects';
 
 export default function ProjectPage(project) {
   const { aboutPage: Page, ...props} = project;
@@ -20,7 +21,7 @@ export default function ProjectPage(project) {
         </ul>
         <p><br/></p>
         <div>
-          <div className="container">
+          <div className={`container ${styles.content}`}>
             <Page />
           </div>
         </div>

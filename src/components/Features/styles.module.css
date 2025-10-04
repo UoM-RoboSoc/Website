@@ -1,24 +1,19 @@
+.section {
+  background-color: #1C211C;
+}
+
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   @media screen and (max-width: 996px) {
     padding: 0 0rem;
-    flex-direction: column;
+    grid-template-columns: auto;
   }
-}
-
-.title {
-  text-align: center;
 }
 
 .feature {
-  padding: 1rem 0rem;
-  text-align: center;
-  @media screen and (min-width: 996px) {
-    max-width: 280px;
-  }
+  background-color: #272B26;
 }
 
 .icon {
@@ -26,8 +21,4 @@
   width: auto;
   color: var(--ifm-color-content);
   margin: 1rem 0;
-}
-
-.desc {
-  color: var(--ifm-color-content-darker);
 }
