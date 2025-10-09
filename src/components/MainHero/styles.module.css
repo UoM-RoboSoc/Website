@@ -15,7 +15,9 @@
 }
 
 .container {
-  padding: 4rem 2rem;
+  @media screen and (min-width: 996px) {
+    padding: 4rem 2rem;
+  }
 }
 
 .logo {
