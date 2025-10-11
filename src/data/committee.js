@@ -17,7 +17,7 @@ export const committee2526 = [
     name: "Nadeem",
     fullName: "Nadeem Ahmad",
     role: "Treasurer",
-    // img: "/img/committee-members/nadeem.jpg",
+    img: "/img/committee-members/nadeem.jpg",
     linkedin: "https://www.linkedin.com/in/nadeem-ahmad-934864332",
   },
   {
