@@ -12,6 +12,12 @@ export const socials = [
     to: 'https://discord.gg/JwrXZmu5fP',
   },
   {
+    id: 'whatsapp',
+    label: 'Whatsapp',
+    img: '/assets/whatsapp.svg',
+    to: 'https://chat.whatsapp.com/HmHOTFdzhLOFTDfTP8b2ph',
+  },
+  {
     id: 'youtube',
     label: 'Youtube',
     img: '/assets/youtube.svg',
