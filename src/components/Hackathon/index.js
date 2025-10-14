@@ -24,7 +24,7 @@ export default function Who() {
       imagePos="left"
       buttonJSX={
         <>
-          <Link to="https://uom-robosoc.github.io" className="button button--primary">
+          <Link to="https://hackabot-2026.com/" className="button button--primary">
             <span className={styles.buttonText}>
             <MdOpenInNew className={styles.icon}/>Go to the website
             </span>

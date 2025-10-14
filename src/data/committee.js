@@ -121,7 +121,7 @@ export const committee2526 = [
     name: "Archie",
     fullName: "Archie James",
     role: "Hackathon Team",
-    // img: "/img/committee-members/archie.jpg",
+    img: "/img/committee-members/archie.jpg",
   },
   {
     name: "Ted",
