@@ -28,11 +28,11 @@ export const committee2526 = [
     linkedin: "https://www.linkedin.com/in/seun-fashesin-souza-6285a8236",
   },
   {
-    name: "Joshua B",
-    fullName: "Joshua Bode",
+    name: "Sara",
+    fullName: "Sara Alaloul",
     role: "Technician",
-    img: "/img/committee-members/joshua_b.jpg",
-    linkedin: "https://www.linkedin.com/in/joshuabode",
+    img: "/img/committee-members/sara.jpg",
+    linkedin: "https://www.linkedin.com/in/sara-alaloul",
   },
   {
     name: "Justin",

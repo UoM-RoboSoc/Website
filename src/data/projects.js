@@ -72,7 +72,7 @@ export const projects = [
     id: 'bespoke',
     title: 'Bespoke Projects',
     difficulty: 'Advanced',
-    projectLead: 'Joshua B',
+    projectLead: 'Sara',
     projectLeadTitle: 'Bespoke Lead',
     img: '/img/rov_board.png',
     shortDescription: "Work on our unfinished robots or bring your own idea to the table!",
