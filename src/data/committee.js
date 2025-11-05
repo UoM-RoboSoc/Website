@@ -127,7 +127,8 @@ export const committee2526 = [
     name: "Ted",
     fullName: "Edward Donnan",
     role: "Hackathon Team",
-    // img: "/img/committee-members/ted.jpg"
+    img: "/img/committee-members/ted.jpg",
+    linkedin: "https://www.linkedin.com/in/teddy-donnan-920b7432a/",
   },
   {
     name: "Thierry",
