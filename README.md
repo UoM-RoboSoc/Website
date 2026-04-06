@@ -1,6 +1,11 @@
-# Website
+# uom-robosoc.com
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+| Hero | Project View |
+| --- | --- |
+| <img width="1851" height="1200" alt="image" src="https://github.com/user-attachments/assets/0ae380f3-c6a2-4107-a747-2b26840d940d" /> | <img width="1584" height="949" alt="image" src="https://github.com/user-attachments/assets/67837a8e-5e89-4fae-8263-285bbd6ae4b2" /> ||
+| CTA and Footer | Info |
+| <img width="1851" height="651" alt="image" src="https://github.com/user-attachments/assets/14e24ee8-9220-4c97-95cc-ebd91fb74eb5" /> | <img width="1851" height="1200" alt="image" src="https://github.com/user-attachments/assets/9c692899-a55f-44fb-a8a6-288f1a8f0e66" /> |
 
 ## Installation
 
